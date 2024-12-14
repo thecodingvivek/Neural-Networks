@@ -33,7 +33,6 @@ nav span{
     gap: 10px;
     align-items: center;
     justify-content: center;
-    background-image: url('/mbg.svg');
     background-position: center;
 }
 
