@@ -54,7 +54,7 @@ nav span{
     aspect-ratio: 1/1;
     background-color: black;
     border-radius: 30px;
-    background-image: url('/bg.svg');
+    background-image: url('bg.svg');
     background-position: center;
 }
 
