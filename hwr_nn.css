@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Space Mono", monospace;
+}
+
+nav h1{
+    line-height: 1px;
+}
+
+nav span{
+    font-size: 10px;
+    color: #000000b5;
+}
+
+.main_wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/mbg.svg');
+    background-position: center;
+}
+
+.drawpad_cont{
+    background-color: #e9ecef;
+    width: 310px;
+    height: 360px;
+    border-radius: 50px 50px 30px 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border: #ccc 1px solid;
+}
+
+.Lcanvacont{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: black;
+    border-radius: 30px;
+    background-image: url('/bg.svg');
+    background-position: center;
+}
+
+.Llower{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    justify-content: space-between;
+}
+
+.pr_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    height: 100%;
+}
+.pr_main{
+    width: calc(100% - 40px);
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    gap: 1px;
+    font-family: "Space Mono", monospace;
+}
+.pr_prog{
+    width: 100%;
+    height: 4px;
+    background-color: #adb5bd;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.prediction_rate{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95.612%;
+    height: 100%;
+    background-color: green;
+    transition: all 1s ease;
+}
+
+.predictBtn,.closeBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding-top:4px;
+    padding-bottom: 4px;
+    background-color: green;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.closeBtn{
+    background-color: #000;
+}
+
+.predictBtn span,.closeBtn span{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: "Space Mono", monospace;
+}
+
+#Scanva{
+    border-radius: 5px;
+}
+
+.output_cont{
+    width: 28px;
+    height: 310px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;}
+
+.output_main{
+    width: 100%;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+/* 3a5a40 */
+.output{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fafafa;
+    border: 1px;
+    border-color: #344e41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6a994e;
+    font-family: "Space Mono", monospace;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer span,a{
+    color: #fff;
+    font-family: "Space Mono", monospace;
+}
