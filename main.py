@@ -8,8 +8,6 @@ import json
 train_x = train_x.reshape(60000, 784)/255.0
 testd_x = testd_x.reshape(10000, 784)/255.0
 
-print(train_x[0])
-
 def one_hot_encode(labels, num_classes=10):
     return numpy.eye(num_classes)[labels]
 
